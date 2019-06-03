@@ -1,0 +1,15 @@
+@import '../../styles/shared';
+
+.header {
+  @include flex;
+  align-items: center;
+  background: color(Navy);
+  color: color(White);
+  justify-content: space-between;
+  padding: to-rem(0 20);
+}
+
+.appNameWrapper {
+  @include flex;
+  align-items: center;
+}

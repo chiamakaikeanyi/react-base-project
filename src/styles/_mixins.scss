@@ -1,0 +1,44 @@
+@function color($color) {
+    @return map-get($palette, $color);
+}
+
+// A mixin to darken colors on hover
+@mixin hoverHandler($color) {
+    color: $color;
+
+    &:hover {
+        color: darken($color, 5%);
+    }
+}
+
+@mixin flex {
+    display: flex;
+    // Fallback for browsers that don't support flex e.g. Opera Mini
+    @supports not (display: flex) {
+        display: block;
+    }
+}
+
+@mixin placeholder {
+    &::placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin unit-vh($prop, $int) {
+    #{$prop}: #{$int + 'vh'};
+    // Fallback for browsers that don't support vh e.g opera mini
+    @supports not (max-height: 1vh) {
+        #{$prop}: #{$int + '%'};
+    }
+}
+
+@mixin unit-vw($prop, $int) {
+    #{$prop}: #{$int + 'vw'};
+    // Fallback for browsers that don't support vw e.g opera mini
+    @supports not (max-width: 1vw) {
+        #{$prop}: #{$int + '%'};
+    }
+}

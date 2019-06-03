@@ -1,0 +1,7 @@
+@import '../../styles/shared.scss';
+
+.siteBody {
+  max-width: to-rem(800);
+  min-height: calc(100vh - 70px);
+  padding: to-rem(0 20);
+}

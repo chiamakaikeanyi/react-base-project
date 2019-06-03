@@ -1,0 +1,23 @@
+@import '../../styles/shared.scss';
+
+footer {
+  background: linear-gradient(to right, color(PurpleVarOne) 0%, color(PurpleVarFive) 30%, color(PurpleVarSix) 60%, color(PurpleVarSeven) 100%);
+  bottom: 0;
+  color: color(Grey95);
+  font-size: to-rem(14);
+  font-weight: $font-weight-dense;
+  line-height: 1.5;
+  padding: to-rem(50);
+  text-align: center;
+  width: 100%;
+}
+
+.middot {
+    background: color(Grey95);
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: to-rem(3);
+    margin: to-rem(3 5);
+    width: to-rem(3);
+}

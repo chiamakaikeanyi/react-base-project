@@ -1,0 +1,17 @@
+$box-shadow: 0 to-rem(4) to-rem(8) 0 rgba(0, 0, 0, 0.12), 0 to-rem(2) to-rem(4) 0 rgba(0, 0, 0, 0.08);
+
+%scaleOnHover {
+  transition: transform 0.4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+%hoverShadowVarOne {
+  transition: box-shadow 0.4s ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
