@@ -1,8 +1,8 @@
 import React from 'react';
-import constants from '../../config/constants';
+import config from 'config';
 import styles from './footer.module.scss';
 
-const { author, gitHub, website, } = constants;
+const { author, gitHub, website, } = config;
 
 const Footer = () => (
   <footer>

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {composeClasses} from '../../libs/utils';
+import { composeClasses } from 'libs/utils';
 import styles from './input.module.scss';
 
-const Input = ({className, error, inputStyle, label, labelStyle, labelIcon, name, placeholder, type}) => {
+const Input = ({ className, error, inputStyle, label, labelStyle, labelIcon, name, placeholder, type }) => {
     return (
         <div className={composeClasses(inputStyle || styles.inputWrapper, error && styles.errorState)}>
             <input
@@ -34,7 +34,7 @@ Input.propTypes = {
     error: PropTypes.string.isRequired,
     inputStyle: PropTypes.string,
     label: PropTypes.string.isRequired,
-    labelIcon:  PropTypes.string.isRequired,
+    labelIcon: PropTypes.string.isRequired,
     labelStyle: PropTypes.string,
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,

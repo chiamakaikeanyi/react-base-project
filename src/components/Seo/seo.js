@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import constants from '../../config/constants';
+import config from 'config';
 
 const {
   appName,
@@ -10,7 +10,7 @@ const {
     keywords,
   },
   socialHandle,
-} = constants;
+} = config;
 
 /**
  * @param {Object} props Component Props

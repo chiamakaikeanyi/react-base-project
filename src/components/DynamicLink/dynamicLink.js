@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { isExternalUrl, omit, } from '../../libs/utils';
+import { isExternalUrl, omit, } from 'libs/utils';
 
 /**
  * Renders a Link as either an intenal path or an external url

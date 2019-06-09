@@ -32,11 +32,11 @@ For each feature you work on, create a separate branch.
 - Render as svg
 
 ```js
-   import Icon from '../Icon';
+   import Icon from 'Icon';
    <Icon name="logo" />
 ```
 or
 ```js
-   import Logo from '../Logo';
+   import Logo from 'Logo';
    <Logo />
 ```

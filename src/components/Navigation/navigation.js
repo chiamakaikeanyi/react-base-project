@@ -2,12 +2,12 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { isMobile, isTablet, } from 'react-device-detect';
 import PropTypes from 'prop-types';
-import NavItem from '../NavItem';
-import Icon from '../Icon';
-import constants from '../../config/constants';
+import Icon from 'components/Icon';
+import NavItem from 'components/NavItem';
+import config from 'config';
 import styles from './navigation.module.scss';
 
-const { appName } = constants;
+const { appName } = config;
 
 const Navigation = ({ navItems, toggleHandler }) => (
     <Fragment>

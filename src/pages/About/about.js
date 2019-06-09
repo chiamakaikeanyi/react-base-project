@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Layout from '../../components/Layout';
-import constant from '../../config/constants';
+import Layout from 'components/Layout';
+import config from 'config';
 import styles from './about.module.scss';
 
-const { authorBio } = constant;
+const { authorBio } = config;
 
 const About = () => {
   return (

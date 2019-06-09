@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {omit} from '../../libs/utils'
+import {omit} from 'libs/utils'
 
 /**
  * Icon component to get and render app icons
@@ -16,7 +16,7 @@ const Icon = (props) => {
     }
 
     try {
-        const Image = require(`../../images/svgs/${props.name}`).default;
+        const Image = require(`images/svgs/${props.name}`).default;
 
         if (Image) {
             return (
