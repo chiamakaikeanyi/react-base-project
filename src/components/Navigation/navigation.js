@@ -15,7 +15,9 @@ const Navigation = ({ navItems, toggleHandler }) => (
         <header className={styles.header}>
             {
                 (isMobile || isTablet) &&
-                <Icon name="hamburger" onClick={toggleHandler} />
+                <button aria-label="menu">
+                    <Icon name="hamburger" onClick={toggleHandler} />
+                </button>
             }
             <Link to='/' className={styles.appNameWrapper}>
                 <Icon aria-label={appName} name="logo" />
