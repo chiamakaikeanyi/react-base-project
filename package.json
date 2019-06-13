@@ -20,6 +20,10 @@
     "*.js": [
       "eslint --fix --quiet",
       "git add"
+    ],
+    "*.scss": [
+      "stylelint --syntax=scss",
+      "git add"
     ]
   },
   "husky": {
@@ -44,6 +48,7 @@
   },
   "devDependencies": {
     "husky": "2.4.1",
-    "lint-staged": "^8.2.0"
+    "lint-staged": "8.2.0",
+    "stylelint": "10.1.0"
   }
 }
