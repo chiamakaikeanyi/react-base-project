@@ -16,9 +16,15 @@
     "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --quiet",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "eslintConfig": {
@@ -37,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "husky": "2.4.1"
+    "husky": "2.4.1",
+    "lint-staged": "^8.2.0"
   }
 }
