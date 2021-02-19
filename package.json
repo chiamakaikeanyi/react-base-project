@@ -49,6 +49,7 @@
   "devDependencies": {
     "husky": "2.4.1",
     "lint-staged": "8.2.0",
-    "stylelint": "10.1.0"
+    "stylelint": "10.1.0",
+    "yarn-upgrade-all": "^0.5.2"
   }
 }
